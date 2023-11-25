@@ -1,0 +1,154 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgba(55, 27, 27, 0.326)
+}
+
+/* .header{
+    overflow: hidden;
+    background-color: rgba(24, 0, 0, 0.5);
+    padding: 5px 5px;
+    height: 4em; 
+} */
+nav{
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.nav-logo{
+    max-width: 100px;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    color: #fff;
+}
+
+.ul links a{
+    position: relative;
+    padding-bottom: 0.75rem;
+    color: #fff;
+}
+
+.links a::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color:#0a0303 ;
+    transition: al 0.3s ease;
+}
+
+.links a:hover::after{
+    width: 70%
+}
+
+.btn{
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #520000;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover{
+    background-color: #d81d1d;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 5rem 2rem;
+}
+
+.blur{
+    position: absolute;
+    box-shadow: 0 0 1000px 75px #d81d1d;
+    z-index: -100;
+}
+
+header{
+    position: relative;
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+header .content h4{
+    margin-bottom: 1rem;
+    color: #050101;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+header .content h1{
+    color: #0c0202;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 4rem;
+}
+
+header .content h1 span{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px;
+}
+
+header .content p{
+    margin-bottom: 2rem;
+    color: #470000;
+}
+
+header .image{
+    position: relative;
+    box-shadow: 0 0 50px #ff000071;
+}
+
+header .image::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 38rem;
+    font-weight: 400;
+    line-height: 20rem;
+    color: #d81d1d;
+    opacity: 0.2;
+    z-index: -100;
+}
+
+ header .image img{
+    max-width: 600px;
+    margin: auto;
+}
