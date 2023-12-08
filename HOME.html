@@ -1,244 +1,64 @@
-@import url('https://fonts.googleapis.com/css2?family=Shojumaru&display=swap');
-@import url("https://fonts.googleapis.com/css2?family=Sansita:wght@800&family=Shojumaru&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <title>Siomai ni Nanay Lea</title>
+</head>
+<body>
 
-*{
-    padding: 0;
-    margin: 0;
-    outline: none;
-    border: none;
-    box-sizing: border-box;
-    color: white;
-}
+<!-- Header with logo and navigation bars-->
+    <div class="header">
+        <div class="header_overlay">
+            <div class="nav-logo">
+                <img src="SNLLogo.jpg" alt="">
+            </div>
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+                <button class="btn">Leave a Review</button>
+            </nav>
+        </div>
+    </div>
 
-img{
-    width: 100%;
-    display: flex;
-}
+<!-- Content with overview -->
+    <header class="container">
+        <div class="content">
+           <span class="blur"></span>
+           <span class="blur"></span> 
+           <h4>Best Selling Homemade Siomai in Town!</h4>
+           <h1>Siomai ni Nanay Lea</h1>
+           <p>
+            Indulge in the flavors of tradition and homemade goodness with Siomai Ni Nanay Lea. As the best-selling homemade siomai in town, these little bites pack a punch of tradition and homemade goodness. 
+           </p>
+           <button class="btn">Our Products</button>
+        </div>
+        <div class="image">
+            <img src="SNL-Banner.jpg">
+        </div>
+    </header>
 
-a{
-    text-decoration: none;
-}
+<!-- Announcement Section -->
+    <section id="announcement">
+        <div class="title">
+                <h2 class="header2">Announcement</h2>
+        </div>
 
-body{
-    background-image: url(SNL-CartBlurredDark.png);
-    background-size: cover;
-    background-position: top center;
-    font-family: Shojumaru;
-}
+        <div class="message">
+            <div class="icon"><img src="icons8-announcement-64.png" alt=""></div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio nobis nihil dolore eius laborum quod officia. Corporis aliquid itaque eum illo nesciunt sint cupiditate, dolor delectus ea nam accusantium optio.</p>
+        </div>
+    </section>
 
-.header {
-    background-color: rgba(0, 0, 0, 0.55);
-    padding: 0px;
-    text-align: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-.header_overlay {
-    width: 85%;
-    margin: auto;
-    padding: 15px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.nav-logo{
-    max-width: 100px;
-    clip-path: circle(50%);
-}
-
-.navbar{
-    display: flex;
-    gap: 2rem;
-}
-
-.nav-links{
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    gap: 5rem;
-    color: #fff;
-    padding: 1rem 3rem;
-    font-size: 1rem;
-    background-color: #f71e1e;
-    border-radius: 5px;
-    cursor: pointer;
-    font-family: Sansita;
-    letter-spacing: 2px;
-}
-
-.nav-links a::after {
-    content: "";
-    position: absolute;
-    height: 1px;
-    width: 0;
-    bottom: 0;
-    left: 0;
-    background-color: #fff8f8;
-    transition: all 0.3s ease;
-}
-
-.nav-links a:hover {
-    border-bottom: 2px solid #702424;
-}
-
-.nav-links a:hover::after {
-    width: 100%;
-    left: 0%;
-}
-
-.btn{
-    padding: 1rem 2rem;
-    font-size: 1rem;
-    color: #fff;
-    background-color: #f71e1e;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    font-family: Sansita;
-    letter-spacing: 0.5px;
-}
-
-.btn:hover{
-    background-color: #d81d1d;
-}
-
-.container{
-    max-width: 1200px;
-    padding: 5rem 2rem;
-    margin: auto;
-}
-
-.blur{
-    position: absolute;
-    box-shadow: 0 0 1000px 75px #0d0a09;
-    z-index: -100;
-}
-
-header{
-    position: relative;
-    padding-top: 2rem;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    gap: 2rem;
-}
-
-header .content h4{
-    margin-bottom: 1rem;
-    color: white;
-    font-size: 1rem;
-    font-weight: 700;
-    letter-spacing: 2px;
-    -webkit-text-stroke-color: #000000;
-    -webkit-text-stroke-width: 1px;
-}
-
-header .content h1{
-    color: white;
-    margin-bottom: 1rem;
-    font-size: 4rem;
-    font-weight: 700;
-    line-height: 4rem;
-    letter-spacing: 3px;
-    -webkit-text-stroke-color: #0a0303;
-    -webkit-text-stroke-width: 1px;
-}
-
-header .content p{
-    font-size: 15px;
-    margin-bottom: 2rem;
-    color: white;
-    text-align: justify;
-    background-color: rgba(0, 0, 0, 0.5); 
-    padding: 20px;
-    border-radius: 5px;
-    font-family: Poppins;
-}
-
-header .image{
-    position: relative;
-    box-shadow: 0 0 50px #ff000071;
-}
-
-header .image::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 3rem;
-    font-weight: 400;
-    line-height: 20rem;
-    color: #d81d1d;
-    opacity: 0.2;
-    z-index: -100;
-}
-
-header .image img{
-    max-width: 600px;
-    margin: auto;
-}
-
-/* Announcement Section Styles */
-section {
-    background-color: #ac0606;
-    padding: 10px 0; /* Improved padding */
-}
-
-#announcement .title {
-    text-align: center;
-    margin-bottom: 10px;
-    letter-spacing: 0.2rem;
-}
-
-section .message {
-    display: flex;
-    align-items: center; /* Align items vertically in the center */
-    padding: 10px; /* Improved padding */
-    gap: 1rem; /* Adjusted gap for better spacing */
-}
-
-section .message .icon {
-    height: 150px; /* Adjust the height as needed */
-}
-
-section .message p {
-    flex: 1; /* Allow the paragraph to take the remaining space */
-    font-size: 15px;
-    margin-bottom: 2rem;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.7); /* Adjusted background opacity */
-    text-align: justify;
-    padding: 20px;
-    border-radius: 5px;
-    font-family: 'Poppins', sans-serif;
-}
-
-/* Phone display */
-@media only screen and (max-width: 1023px) {
-    .header_overlay {
-        /* flex-direction: column; */
-        display: flex;
-        gap: 2rem;
-    }
-
-    .nav-links {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 1rem;
-        padding: 1rem 0;
-    }
-
-    .btn {
-        margin-top: 1rem;
-    }
-
-    header {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-    }
-}
+<!-- Footer -->
+    <footer class="contact">
+        <a href="#">
+            <img src="" alt="">
+        </a>
+    </footer>
+</body>
+</html>
