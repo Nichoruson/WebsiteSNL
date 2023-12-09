@@ -80,7 +80,7 @@ body{
     background-color: #850000;
 }
 
-.header_overlay button{
+.header_overlay button1{
     display: flex;
     padding: 0 20px;
     height: 80%;
@@ -93,72 +93,8 @@ body{
     transition: all ease-in-out 100ms;
 }
 
-.header_overlay button:hover {
+.header_overlay button1:hover {
     background-color: #850000;
-}
-
-/* .head {
-    background-color: rgba(0, 0, 0, 0.55);
-    padding: 0px;
-    text-align: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-.header_overlay {
-    width: 85%;
-    margin: auto;
-    padding: 15px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.nav-logo {
-    max-width: 100px;
-    clip-path: circle(50%);
-}
-
-.navbar{
-    display: flex;
-    gap: 2rem;
-}
-
-.nav-links{
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    gap: 5rem;
-    color: #fff;
-    padding: 1rem 3rem;
-    font-size: 1rem;
-    background-color: #f71e1e;
-    border-radius: 5px;
-    cursor: pointer;
-    font-family: Sansita;
-    letter-spacing: 2px;
-}
-
-.nav-links a{
-    position: relative;
-}
-
-.nav-links a::after {
-    content: "";
-    position: absolute;
-    height: 2%;
-    width: 0;
-    bottom: 0;
-    left: 0;
-    background-color: #fff8f8;
-    transition: all 0.3s ease;
-}
-
-.nav-links a:hover::after {
-    width: 100%;
-    transition: all 0.3s ease;
-    left: 0%;
 }
 
 .btn{
@@ -172,10 +108,9 @@ body{
     font-family: Sansita;
     letter-spacing: 0.5px;
 }
-
 .btn:hover{
     background-color: #d81d1d;
-} */
+}
 
 .container{
     max-width: 1200px;
@@ -184,7 +119,7 @@ body{
 }
 
 .blur{
-    position: absolute;
+    position: re;ative;
     box-shadow: 0 0 1000px 75px #0d0a09;
     z-index: -100;
 }
