@@ -10,6 +10,77 @@
 body{
     background-color: #f0f0f0;
 }
+.header_overlay {
+    width: 100%;
+    padding: 1px 60px;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    
+}
+
+.header_overlay nav{
+    display: flex;
+}
+
+.header_overlay .logo{
+    height: 55px;
+    width: fit-content;
+    align-self: center;
+    cursor: pointer;
+}
+
+.header_overlay .logo img {
+    height: 100%;
+    clip-path: circle(50%);
+}
+
+.header_overlay ul {
+    height: 80%;
+    padding-left: 40px;
+    list-style: none;
+    display: flex;
+    align-self: center;
+}
+
+.header_overlay ul li a {
+    display: block;
+    padding: 0 20px;
+    height: 100%;
+    color: white;
+    line-height: 50px;
+    letter-spacing: 2px;
+    background-color: #f71e1e;
+    cursor: pointer;
+    transition: all ease-in-out 100ms;
+}
+
+.header_overlay ul li a:hover {
+    background-color: #850000;
+    color: white;
+}
+
+.header_overlay button{
+    display: flex;
+    padding: 0 20px;
+    height: 80%;
+    line-height: 50px;
+    align-self: center;
+    color: white;
+    letter-spacing: 2px;
+    background-color: #f71e1e;
+    cursor: pointer;
+    transition: all ease-in-out 100ms;
+}
+
+.header_overlay button:hover {
+    background-color: #850000;
+    color: white;
+}
 
 header{
     background-image: url(SNL-Header2.png);
