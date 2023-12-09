@@ -21,13 +21,83 @@ a{
 }
 
 body{
-    background-image: url(SNL-CartBlurredDark.png);
+    background-image: url(images/SNL-CartBlurredDark.png);
     background-size: cover;
     background-position: top center;
     font-family: Shojumaru;
 }
 
-.header {
+.header_overlay {
+    width: 100%;
+    padding: 1px 60px;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    
+}
+
+.header_overlay nav{
+    display: flex;
+    font-family: Sansita;
+}
+
+.header_overlay .logo{
+    height: 55px;
+    width: fit-content;
+    align-self: center;
+    cursor: pointer;
+}
+
+.header_overlay .logo img {
+    height: 100%;
+    clip-path: circle(50%);
+}
+
+.header_overlay ul {
+    height: 80%;
+    padding-left: 40px;
+    list-style: none;
+    display: flex;
+    align-self: center;
+}
+
+.header_overlay ul li a {
+    display: block;
+    padding: 0 20px;
+    height: 100%;
+    line-height: 50px;
+    letter-spacing: 2px;
+    background-color: #f71e1e;
+    cursor: pointer;
+    transition: all ease-in-out 100ms;
+}
+
+.header_overlay ul li a:hover {
+    background-color: #850000;
+}
+
+.header_overlay button{
+    display: flex;
+    padding: 0 20px;
+    height: 80%;
+    line-height: 50px;
+    letter-spacing: 2px;
+    align-self: center;
+    font-family: Sansita;
+    background-color: #f71e1e;
+    cursor: pointer;
+    transition: all ease-in-out 100ms;
+}
+
+.header_overlay button:hover {
+    background-color: #850000;
+}
+
+/* .head {
     background-color: rgba(0, 0, 0, 0.55);
     padding: 0px;
     text-align: center;
@@ -45,7 +115,7 @@ body{
     justify-content: space-between;
 }
 
-.nav-logo{
+.nav-logo {
     max-width: 100px;
     clip-path: circle(50%);
 }
@@ -70,10 +140,14 @@ body{
     letter-spacing: 2px;
 }
 
+.nav-links a{
+    position: relative;
+}
+
 .nav-links a::after {
     content: "";
     position: absolute;
-    height: 1px;
+    height: 2%;
     width: 0;
     bottom: 0;
     left: 0;
@@ -81,12 +155,9 @@ body{
     transition: all 0.3s ease;
 }
 
-.nav-links a:hover {
-    border-bottom: 2px solid #702424;
-}
-
 .nav-links a:hover::after {
     width: 100%;
+    transition: all 0.3s ease;
     left: 0%;
 }
 
@@ -104,7 +175,7 @@ body{
 
 .btn:hover{
     background-color: #d81d1d;
-}
+} */
 
 .container{
     max-width: 1200px;
@@ -184,22 +255,25 @@ header .image img{
 }
 
 /* Announcement Section Styles */
-section {
+#announcement{
     background-color: #ac0606;
-    padding: 10px 0; /* Improved padding */
+    padding: 20px 0; 
 }
 
 #announcement .title {
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     letter-spacing: 0.2rem;
+    background-color: #ac0606;
+    padding: 25px 0;
 }
 
 section .message {
     display: flex;
     align-items: center; /* Align items vertically in the center */
-    padding: 10px; /* Improved padding */
+    padding:20px;
     gap: 1rem; /* Adjusted gap for better spacing */
+    background-color: #ac0606;
 }
 
 section .message .icon {
@@ -213,10 +287,30 @@ section .message p {
     color: white;
     background-color: rgba(0, 0, 0, 0.7); /* Adjusted background opacity */
     text-align: justify;
-    padding: 20px;
+    padding: 25px;
     border-radius: 5px;
     font-family: 'Poppins', sans-serif;
 }
+
+#contact_information {
+    background-color: rgb(0, 0, 0);
+    padding: 2rem;
+    color: white;
+    text-align: center;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.contact a img {
+    width: 25px; /* Adjust the width of the images */
+    filter: brightness(0) invert(1); /* Change the color of the image to white */
+}
+
+
 
 /* Phone display */
 @media only screen and (max-width: 1023px) {
@@ -227,6 +321,7 @@ section .message p {
     }
 
     .nav-links {
+        
         flex-direction: column;
         align-items: flex-start;
         gap: 1rem;
