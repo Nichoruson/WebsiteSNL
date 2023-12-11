@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Shojumaru&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Sansita:wght@800&family=Shojumaru&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
     box-sizing: border-box;
-    font-family: 'Shojumaru', sans-serif;
+    color: white;
 }
 
 body{
@@ -39,47 +43,79 @@ body{
     clip-path: circle(50%);
 }
 
-.header_overlay ul {
+.navbar{
+    background-color: #f71e1e;
     height: 80%;
-    padding-left: 40px;
+    margin-top: 10px;
+    margin-left: 750px;
+    display: flex;
+    font-family: Sansita;
+    align-items: center;
+    width: 275px;
+    height: 50px;
+    justify-content: space-between;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.navbar ul li{
     list-style: none;
-    display: flex;
-    align-self: center;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fffcfc;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: rgb(255, 253, 253);
+    border-radius: 5px;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
 }
 
-.header_overlay ul li a {
-    display: block;
+.header_overlay button1 {
+    display: flex;
     padding: 0 20px;
-    height: 100%;
-    color: white;
+    width: 180px;
+    height: 50px;
     line-height: 50px;
+    border-radius: 10px;
     letter-spacing: 2px;
+    align-self: center;
+    font-family: Sansita;
     background-color: #f71e1e;
     cursor: pointer;
-    transition: all ease-in-out 100ms;
+    position: relative;
 }
 
-.header_overlay ul li a:hover {
-    background-color: #850000;
-    color: white;
+.header_overlay button1::after {
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+    position: absolute;
+    bottom: 5px;
+    left: 18px;
+    transition: width 0.5s;
 }
 
-.header_overlay button{
-    display: flex;
-    padding: 0 20px;
-    height: 80%;
-    line-height: 50px;
-    align-self: center;
-    color: white;
-    letter-spacing: 2px;
-    background-color: #f71e1e;
-    cursor: pointer;
-    transition: all ease-in-out 100ms;
+.header_overlay button1:hover::after {
+    width: 80%;
 }
-
-.header_overlay button:hover {
-    background-color: #850000;
-    color: white;
+.header_overlay button1:hover{
+    background-color: #db1717;
+    transition: width 0.5s;
 }
 
 header{
@@ -94,6 +130,7 @@ header{
 }
 
 h1{
+    font-family: 'Shojumaru', sans-serif;
     font-size: 30px;
     font-weight: 600;
     margin-bottom: 20px;
@@ -130,5 +167,3 @@ body {
     width: 100%;
     height: 200px;
   }
-
-
