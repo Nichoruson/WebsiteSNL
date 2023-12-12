@@ -322,14 +322,15 @@ header .image img{
 h2.header2{
     color: red;
     font-size: 35px;
-    
-
 }
+
 .msg{ 
     display: flex;
     gap: 3rem;
     position: center;
+    padding: 2rem;
 }
+
 .message {
     /* display: flex; */
     align-items: center; /* Align items vertically in the center */
@@ -338,13 +339,15 @@ h2.header2{
     background-color: #F8F8F8;
 }
 
-section .icon img {
-    max-width: 100%; /* Adjust if needed */
-    height: auto;
-    display: block;
-    margin: auto;
-    position: absolute; 
-    margin-left: 50%;
+.icon {
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.icon img {
+    margin-top: 8rem;
+    height: 10rem;
 }
 
 
