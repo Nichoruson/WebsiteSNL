@@ -355,10 +355,8 @@ form .btn{
 form .btn button{
   height: 100%;
   width: 100%;
-  border: 1px solid #444;
   outline: none;
-  background: #dd1212;
-  color: #999;
+  background: #f71e1e;
   font-size: 17px;
   font-weight: 500;
   text-transform: uppercase;
