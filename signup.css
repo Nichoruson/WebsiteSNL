@@ -339,7 +339,9 @@ header .image img{
 }
 
 .container p a{
-    color:white;
+    color: #F8F8F8;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
 }
 
 .container span{
@@ -376,11 +378,11 @@ header .image img{
 }
 
 .container button.hidden{
-    background-color: black;
+    background-color: #363636;
 }
 
 .container form{
-    background-color: #333;
+    background-color: #363636;
     display: flex;
     align-items: center;
     justify-content: center;
