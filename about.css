@@ -286,13 +286,14 @@ header .content p{
 #about_us {
     font-family: 'Shojumaru';
     padding: 20px 0;
+    background-color: #000000;
 }
 
 #about_us .title{
     text-align: center;
     margin-bottom: 20px;
     letter-spacing: 0.2rem;
-    background-color: #000000;
+    background-color: #0d0a09;
     padding: 25px 0;
     color: #000;
 }
@@ -349,7 +350,7 @@ section .icon img {
     font-size: 15px;
     margin-bottom: 2rem;
     color: #F8F8F8;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(255, 0, 0, 0.7);
     text-align: justify;
     padding: 25px;
     border-radius: 5px;
@@ -383,7 +384,7 @@ section .icon img {
     position: relative;
     width: 90%;
     height: 5px;
-    background: #000;
+    background: #eee7e7;
     margin-top: 30px;
     box-sizing: border-box;
     margin-left: 7%;
