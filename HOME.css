@@ -42,7 +42,6 @@ body{
 
 .header_overlay nav{
     display: flex;
-    font-family: Sansita;
 }
 
 .header_overlay .logo{
@@ -58,14 +57,14 @@ body{
 }
 
 .navbar{
-    background-color: #f71e1e;
+    
     height: 80%;
     margin-top: 10px;
-    margin-left: 750px;
+    margin-left: 100px;
     display: flex;
     font-family: Sansita;
     align-items: center;
-    width: 290px;
+    width: 275px;
     height: 50px;
     justify-content: space-between;
     border-radius: 10px;
@@ -99,6 +98,7 @@ body{
 
 .header_overlay button1 {
     display: flex;
+    margin-top: 10px;
     padding: 0 20px;
     width: 180px;
     height: 50px;
@@ -107,7 +107,7 @@ body{
     letter-spacing: 2px;
     align-self: center;
     font-family: Sansita;
-    background-color: #f71e1e;
+    /* background-color: #f71e1e; */
     cursor: pointer;
     position: relative;
 }
@@ -128,10 +128,89 @@ body{
     width: 80%;
 }
 .header_overlay button1:hover{
-    background-color: #db1717;
+    /* background-color: #db1717; */
     transition: width 0.5s;
 }
 
+.header_overlay button1 {
+    display: flex;
+    margin-top: 10px;
+    padding: 0 20px;
+    width: 180px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 10px;
+    letter-spacing: 2px;
+    align-self: center;
+    font-family: Sansita;
+    /* background-color: #f71e1e; */
+    cursor: pointer;
+    position: relative;
+}
+
+.header_overlay button1::after {
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+    position: absolute;
+    bottom: 5px;
+    left: 18px;
+    transition: width 0.5s;
+}
+
+.header_overlay button1:hover::after {
+    width: 80%;
+}
+.header_overlay button1:hover{
+    /* background-color: #db1717; */
+    transition: width 0.5s;
+}
+
+.header_overlay button1:hover::after {
+    width: 80%;
+}
+.header_overlay button1:hover{
+    /* background-color: #db1717; */
+    transition: width 0.5s;
+}
+
+.header_overlay button2 {
+    display: flex;
+    margin-top: 10px;
+    padding: 0 20px;
+    width: 180px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 10px;
+    letter-spacing: 2px;
+    align-self: center;
+    font-family: Sansita;
+    /* background-color: #f71e1e; */
+    cursor: pointer;
+    position: relative;
+}
+
+.header_overlay button2::after {
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+    position: absolute;
+    bottom: 5px;
+    left: 18px;
+    transition: width 0.5s;
+}
+
+.header_overlay button2:hover::after {
+    width: 80%;
+}
+.header_overlay button2:hover{
+    /* background-color: #db1717; */
+    transition: width 0.5s;
+}
 
 .btn{
     padding: 1rem 2rem;
@@ -227,7 +306,7 @@ header .image img{
 
 /* Announcement Section Styles */
 #announcement{
-    background-color: #ac0606;
+    background-color: #F8F8F8;
     padding: 20px 0; 
 }
 
@@ -235,27 +314,44 @@ header .image img{
     text-align: center;
     margin-bottom: 20px;
     letter-spacing: 0.2rem;
-    background-color: #ac0606;
+    background-color: #F8F8F8;
     padding: 25px 0;
 }
 
-section .message {
+h2.header2{
+    color: red;
+    font-size: 35px;
+    
+
+}
+.msg{ 
     display: flex;
+    gap: 3rem;
+    position: center;
+}
+.message {
+    /* display: flex; */
     align-items: center; /* Align items vertically in the center */
     padding:20px;
     gap: 1rem; /* Adjusted gap for better spacing */
-    background-color: #ac0606;
+    background-color: #F8F8F8;
 }
 
-section .message .icon {
-    height: 150px; /* Adjust the height as needed */
+section .icon img {
+    max-width: 100%; /* Adjust if needed */
+    height: auto;
+    display: block;
+    margin: auto;
+    position: absolute; 
+    margin-left: 50%;
 }
 
-section .message p {
-    flex: 1; /* Allow the paragraph to take the remaining space */
+
+.message p {
+    flex: 1; /*Allow the paragraph to take the remaining space */
     font-size: 15px;
     margin-bottom: 2rem;
-    color: white;
+    color: #F8F8F8;
     background-color: rgba(0, 0, 0, 0.7); /* Adjusted background opacity */
     text-align: justify;
     padding: 25px;
@@ -266,7 +362,7 @@ section .message p {
 #contact_information {
     background-color: rgb(0, 0, 0);
     padding: 2rem;
-    color: white;
+    color: #F8F8F8;
     text-align: center;
 }
 
@@ -281,9 +377,32 @@ section .message p {
     filter: brightness(0) invert(1); /* Change the color of the image to white */
 }
 
+.line {
+    position: relative;
+    width: 90%;
+    height: 5px;
+    background: #000;
+    margin-top: 30px;
+    box-sizing: border-box;
+    margin-left: 7%;
+   }
+   
+   .line::before {
+    content: "";
+    position: absolute;
+    border: #000000;
+    border-radius: 50%;
+    width: 50%;
+    height: 100%;
+    background: inherit;
+    left: 50%;
+    top: 0;
+    z-index: 1;
+   }
 
 
-/* Phone display */
+
+   /* Phone display */
 @media only screen and (max-width: 1023px) {
     .header_overlay {
         /* flex-direction: column; */
@@ -295,6 +414,7 @@ section .message p {
         position: relative;
         display: flex;
     }
+    
     .nav-links {
         
         flex-direction: column;
