@@ -44,10 +44,10 @@ body{
 }
 
 .navbar{
-    background-color: #f71e1e;
+    
     height: 80%;
     margin-top: 10px;
-    margin-left: 750px;
+    margin-left: 100px;
     display: flex;
     font-family: Sansita;
     align-items: center;
@@ -85,6 +85,7 @@ body{
 
 .header_overlay button1 {
     display: flex;
+    margin-top: 10px;
     padding: 0 20px;
     width: 180px;
     height: 50px;
@@ -93,7 +94,7 @@ body{
     letter-spacing: 2px;
     align-self: center;
     font-family: Sansita;
-    background-color: #f71e1e;
+    /* background-color: #f71e1e; */
     cursor: pointer;
     position: relative;
 }
@@ -114,9 +115,85 @@ body{
     width: 80%;
 }
 .header_overlay button1:hover{
-    background-color: #db1717;
+    /* background-color: #db1717; */
     transition: width 0.5s;
 }
+
+.header_overlay button1 {
+    display: flex;
+    margin-top: 10px;
+    margin-right: px;
+    padding: 0 20px;
+    width: 180px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 10px;
+    letter-spacing: 2px;
+    align-self: center;
+    font-family: Sansita;
+    /* background-color: #f71e1e; */
+    cursor: pointer;
+    position: relative;
+}
+
+.header_overlay button1::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+    position: absolute;
+    bottom: 5px;
+    left: 18px;
+    transition: width 0.5s;
+}
+
+.header_overlay button1:hover::after {
+    width: 80%;
+}
+.header_overlay button1:hover{
+    /* background-color: #db1717; */
+    transition: width 0.5s;
+}
+
+
+.header_overlay button2 {
+    display: flex;
+    margin-top: 10px;
+    padding: 0 20px;
+    width: 105px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #e41616;
+    border-radius: 50px;
+    letter-spacing: 2px;
+    align-self: center;
+    font-family: Sansita;
+    /* background-color: #f71e1e; */
+    cursor: pointer;
+    position: relative;
+}
+
+.header_overlay button2::after {
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+    position: absolute;
+    bottom: 5px;
+    left: 18px;
+    transition: width 0.5s;
+}
+
+.header_overlay button2:hover::after {
+    width: 65%;
+}
+.header_overlay button2:hover{
+    /* background-color: #db1717; */
+    transition: width 0.5s;
+}
+
 
 header{
     background-image: url(SNL-Header2.png);
