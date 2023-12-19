@@ -286,6 +286,7 @@ header{
     font-family: Poppins;
     text-align: justify;
     margin-top: 50px;
+    text-indent: 50px;
 
 }
 
@@ -329,7 +330,7 @@ header{
     font-family: Poppins;
     text-align: justify;
     margin-top: 50px;
-
+    text-indent: 50px;
 }
 
 .content-info2 img {
@@ -372,7 +373,7 @@ header{
     font-family: Poppins;
     text-align: justify;
     margin-top: 70px;
-
+    text-indent: 50px;
 }
 
 .content-info3 img {
@@ -490,7 +491,7 @@ section .icon img {
 .line {
     position: relative;
     width: 90%;
-    height: 5px;
+    height: 5px; 
     background: #eee7e7;
     margin-top: 30px;
     box-sizing: border-box;
