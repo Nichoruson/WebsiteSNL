@@ -21,7 +21,7 @@ a{
 }
 
 body{
-    background-image: url(SNL-CartBlurredDark.png);
+    background-image: url(SNL-CartBlurred.png);
     background-size: cover;
     background-position: top center;
     font-family: Shojumaru;
@@ -355,12 +355,14 @@ h2.header2{
     flex: 1; /*Allow the paragraph to take the remaining space */
     font-size: 15px;
     margin-bottom: 2rem;
+    width: 70px;
     color: #F8F8F8;
     background-color: rgba(0, 0, 0, 0.7); /* Adjusted background opacity */
     text-align: justify;
     padding: 25px;
     border-radius: 5px;
     font-family: 'Poppins', sans-serif;
+    position: relative;
 }
 
 #contact_information {
