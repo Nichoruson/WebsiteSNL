@@ -36,10 +36,9 @@ body {
     background-color: rgba(0, 0, 0, 0.75);
     display: flex;
     justify-content: space-between;
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 1000;
-    
 }
 
 .header_overlay nav{
@@ -59,30 +58,32 @@ body {
 }
 
 .navbar{
-    
     height: 80%;
-    margin-top: 10px;
-    margin-left: 100px;
+    margin-top: 8px;
+    /* margin-left: 100px; */
     display: flex;
     font-family: Sansita;
     align-items: center;
-    width: 275px;
-    height: 50px;
-    justify-content: space-between;
-    border-radius: 10px;
-    cursor: pointer;
+    /* width: 275px;
+    height: 50px; */
+    /* justify-content: space-between; */
+    /* border-radius: 10px; */
+    /* cursor: pointer; */
+    margin-left: 350px;
 }
 
 .navbar ul li{
     list-style: none;
     display: inline-block;
-    margin: 0 20px;
+    margin: 0 50px;
     position: relative;
 }
+
 .navbar ul li a{
     text-decoration: none;
     color: #fffcfc;
 }
+
 .navbar ul li::after{
     content: '';
     height: 3px;
@@ -94,6 +95,7 @@ body {
     bottom: -10px;
     transition: 0.5s;
 }
+
 .navbar ul li:hover::after{
     width: 100%;
 }
@@ -458,6 +460,7 @@ section .icon img {
     margin-bottom: 2rem;
     color: #F8F8F8;
     background-color: rgba(255, 0, 0, 0.7);
+    width: 500px;
     text-align: justify;
     padding: 25px;
     border-radius: 5px;
@@ -543,3 +546,4 @@ section .icon img {
         gap: 1rem;
     }
 }
+ 
